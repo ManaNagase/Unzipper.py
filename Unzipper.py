@@ -17,8 +17,7 @@ def random_char(r):
 try:
     xdw = os.listdir(zip_folder)
 except:
-    print("You shouldn't be seeing this")
-    #Really, If you Do Make A Pull Request Or Set Your Variables In Case You Haven't
+    print("Set Your Goddamm Variables")
 
 
 for i in range(len(xdw)):
