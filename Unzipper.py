@@ -15,7 +15,7 @@ def random_char(r):
 
 #Gets the zip folder
 try:
-    xdw = os.listdir(zip_folder)
+    zip_folder_items = os.listdir(zip_folder)
 except:
     print("Set Your Goddamm Variables")
 
@@ -24,7 +24,7 @@ for i in range(len(xdw)):
     try:
         #Unzip
         #I have no idea how i got this to work, so don't touch anything if you don't know what you're doing
-        with zipfile.ZipFile(zip_folder+"\\"+xdw[i],"r") as zip_ref:
+        with zipfile.ZipFile(zip_folder+"\\"+zip_folder_items[i],"r") as zip_ref:
             zip_ref.extractall(output_folder+"\\"+random_char(128))
         print("Finished")
     except:
